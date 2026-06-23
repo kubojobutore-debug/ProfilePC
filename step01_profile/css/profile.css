@@ -1,4 +1,24 @@
+
 a{
   text-decoration: none;
-  color: black;
+  color: #24292E;
+}
+.wapper{
+  width: 1280px;
+  margin: 0 auto;
+}
+.profileHeader{
+  display: flex;
+  align-items: center;
+}
+.profileLogo{
+  margin: 10px;
+  margin-left: 230px;
+}
+
+.headerContainer{
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: 230px;
 }
