@@ -32,6 +32,10 @@ a {
   margin-bottom: 108px;
 }
 
+.aboutArea{
+  margin-top: 80px;
+}
+
 .aboutTitle {
   width: 92px;
   height: 36px;
@@ -68,17 +72,17 @@ a {
   color: #383E45;
 
 }
-
 .textArea p{
-  width: 297px;
-  font-size: 14.4px;
-  font-family: Arial;
+  width: 397px;
+  height: 60px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0;
   color: #383E45;
-  line-height: 1.4;
   text-align: left;
-  overflow-wrap: break-word;
 }
-
 .bicycleContainer {
   text-align: center;
 }
@@ -121,7 +125,7 @@ a {
   color: #383E45;
 }
 
-.works2022 {
+.works2020 {
   justify-content: center;
   text-align: center;
   font-size: 10px;
@@ -152,14 +156,24 @@ a {
 
   .profileLogo {
     margin: 10px;
-    margin-left: 0px;
   }
 
+  .aboutArea{
+    margin-top: 80px;
+  }
+ .textArea p{
+  width: 337px;
+  height: 135px;
+  font-size: 14px;
+  line-height: 23px;
+  margin: 0;
+}
   .imgSize img {
     width: 100%;
   }
   .iconTextArea{
     flex-direction: column;
+    gap: 0px;
   }
   .bicycleImgArea{
     flex-direction: column;
@@ -170,7 +184,7 @@ a {
     width: 345px;
     height: 248px;
   }
-  .works2022{
+  .works2020{
     margin-top: 138px;
   }
 }
