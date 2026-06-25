@@ -175,7 +175,6 @@ a {
     margin: 10px;
   }
 
-  /* Aboutのデカい文字 */
   .aboutArea {
     margin-top: 80px;
   }
@@ -184,7 +183,6 @@ a {
     width: 100%;
   }
 
-  /* テキストのサイズ */
   .textArea p {
     width: 337px;
     height: 135px;
