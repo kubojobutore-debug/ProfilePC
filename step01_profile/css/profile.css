@@ -3,6 +3,7 @@ a {
   color: #24292E;
 }
 
+/* サイト全体の調整 */
 .wapper {
   width: 1280px;
   height: auto;
@@ -10,16 +11,19 @@ a {
 
 }
 
+/* ヘッダー部分 */
 .profileHeader {
   display: flex;
   align-items: center;
 }
 
+/* Profileロゴ画像 */
 .profileLogo {
   margin: 10px;
   margin-left: 230px;
 }
 
+/* ヘッダーの右側リンク */
 .headerContainer {
   display: flex;
   gap: 30px;
@@ -27,15 +31,17 @@ a {
   margin-right: 230px;
 }
 
+/* About】文字とアイコンテキスト */
 .aboutContainer {
   text-align: center;
   margin-bottom: 108px;
 }
 
-.aboutArea{
+.aboutArea {
   margin-top: 80px;
 }
 
+/* 【About】文字  */
 .aboutTitle {
   width: 92px;
   height: 36px;
@@ -47,6 +53,7 @@ a {
   border-color: grey;
 }
 
+/* アイコンと一文 */
 .iconTextArea {
   display: flex;
   justify-content: center;
@@ -60,6 +67,7 @@ a {
   height: 100px;
 }
 
+/* 名前と紹介文 */
 .textContainer {
   text-align: left;
   margin-bottom: 15px;
@@ -72,7 +80,8 @@ a {
   color: #383E45;
 
 }
-.textArea p{
+
+.textArea p {
   width: 397px;
   height: 60px;
   margin: 0;
@@ -83,10 +92,13 @@ a {
   color: #383E45;
   text-align: left;
 }
+
+/* 自転車の画像一覧 */
 .bicycleContainer {
   text-align: center;
 }
 
+/* 【Bicycle文字】 */
 .bicycleTitle {
   width: 112px;
   height: 36px;
@@ -99,6 +111,7 @@ a {
 
 }
 
+/* 画像まとめ位置調整 */
 .bicycleImgArea {
   display: flex;
   align-items: center;
@@ -112,6 +125,7 @@ a {
   flex-direction: column;
 }
 
+/* 画像詳細名前 */
 .expTitle {
   font-weight: bold;
   font-family: Arial;
@@ -119,12 +133,14 @@ a {
   color: #383E45;
 }
 
+/* 画像詳細文 */
 .expText {
   font-size: 14.4px;
   font-family: Arial;
   color: #383E45;
 }
 
+/* 著作 */
 .works2020 {
   justify-content: center;
   text-align: center;
@@ -134,6 +150,7 @@ a {
   margin-top: 108px;
 }
 
+/* メディアクエリ699.98px以下の変動 */
 @media screen and (max-width:699.98px) {
 
   .wapper {
@@ -158,33 +175,41 @@ a {
     margin: 10px;
   }
 
-  .aboutArea{
+  /* Aboutのデカい文字 */
+  .aboutArea {
     margin-top: 80px;
   }
- .textArea p{
-  width: 337px;
-  height: 135px;
-  font-size: 14px;
-  line-height: 23px;
-  margin: 0;
-}
+
   .imgSize img {
     width: 100%;
   }
-  .iconTextArea{
+
+  /* テキストのサイズ */
+  .textArea p {
+    width: 337px;
+    height: 135px;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0;
+  }
+
+  .iconTextArea {
     flex-direction: column;
     gap: 0px;
   }
-  .bicycleImgArea{
+
+  .bicycleImgArea {
     flex-direction: column;
-    
+
     gap: 81px;
   }
-  .imgSize{
+
+  .imgSize {
     width: 345px;
     height: 248px;
   }
-  .works2020{
+
+  .works2020 {
     margin-top: 138px;
   }
 }
