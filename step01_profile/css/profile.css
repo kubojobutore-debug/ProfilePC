@@ -1,10 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   color: #24292E;
 }
-
 /* サイト全体の調整 */
-.wapper {
+.wrapper {
   width: 1280px;
   height: auto;
   margin: 0 auto;
@@ -20,7 +22,7 @@ a {
 /* Profileロゴ画像 */
 .profileLogo {
   margin: 10px;
-  margin-left: 230px;
+  margin-left: 220px;
 }
 
 /* ヘッダーの右側リンク */
@@ -28,7 +30,7 @@ a {
   display: flex;
   gap: 30px;
   margin-left: auto;
-  margin-right: 230px;
+  margin-right: 220px;
 }
 
 /* About】文字とアイコンテキスト */
@@ -41,6 +43,9 @@ a {
   margin-top: 80px;
 }
 
+.bottomPage{
+  margin-left: 15px;
+}
 /* 【About】文字  */
 .aboutTitle {
   width: 92px;
@@ -150,10 +155,70 @@ a {
   margin-top: 108px;
 }
 
+  .mainDetailVisualImg img{
+    width: 840px;
+    height: 480px;
+    object-fit: cover;
+  }
+  .mainDetailVisualImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .detailTitle{
+    margin-left: 250px;
+    margin-top: 26px;
+    width: 200px;
+    height: 28px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #383E45;
+    font-size: 21.6px;
+    text-align: left;
+  }
+
+  .textDetail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .textDetail p{
+    margin-left: 250px;
+    width: 775px;
+    font-size: 14.4px;
+    font-family: Arial;
+    color: #383E45;
+  }
+  .detailButtonArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+  }
+  .detailTopReturn{
+    width: 100px;
+    height: 20px;
+    font-size: 14.4px;
+    font-family: Arial;
+    text-align: left;
+    color: #383E45;
+    text-align: center;
+    border: none;
+    background: none;
+  }
+/* 
+img {
+  width: 100vw !important;
+  height: 480px !important;
+  object-fit: cover !important;
+} */
 /* メディアクエリ699.98px以下の変動 */
 @media screen and (max-width:699.98px) {
 
-  .wapper {
+  .wrapper {
     width: 100%;
     box-sizing: border-box;
   }
@@ -170,10 +235,9 @@ a {
     align-items: center;
     justify-content: center;
   }
-
-  .detailImg {
+  .mainDetailVisualImg img{
     width: 100%;
-    height: 480px;
+    height: auto;
     object-fit: cover;
     align-items: center;
     justify-content: center;
@@ -217,5 +281,21 @@ a {
 
   .works2020 {
     margin-top: 138px;
+  }
+
+  .bottomDetailPage .detailTitle{
+    margin-left: 0px;
+    margin: 10px;
+  }
+
+  .textDetail p{
+    margin-left: 0px;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .textDetail{
+    margin-right: 100px;
   }
 }
