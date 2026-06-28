@@ -163,9 +163,17 @@ a {
     margin-left: auto;
   }
 
-  .bicycleImg img {
+  .mainVisualImg img {
     width: 100%;
     height: 600px;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detailImg {
+    width: 100%;
+    height: 480px;
     object-fit: cover;
     align-items: center;
     justify-content: center;
