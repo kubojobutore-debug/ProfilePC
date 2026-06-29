@@ -1,10 +1,12 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
+
 a {
   text-decoration: none;
   color: #24292E;
 }
+
 /* サイト全体の調整 */
 .wrapper {
   width: 1280px;
@@ -43,9 +45,10 @@ a {
   margin-top: 80px;
 }
 
-.bottomPage{
+.bottomPage {
   margin-left: 15px;
 }
+
 /* 【About】文字  */
 .aboutTitle {
   width: 92px;
@@ -125,6 +128,15 @@ a {
   margin-top: 60px;
   object-fit: cover;
 }
+/* 画像３枚にホバー効果 */
+.bicycleImgArea img {
+  transition: transform 0.5s ease;
+}
+
+.bicycleImgArea img:hover {
+  transform: scale(1.1);
+}
+
 
 .imgSize {
   flex-direction: column;
@@ -155,66 +167,66 @@ a {
   margin-top: 108px;
 }
 
-  .mainDetailVisualImg img{
-    width: 840px;
-    height: 480px;
-    object-fit: cover;
-  }
-  .mainDetailVisualImg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-  }
-  .detailTitle{
-    margin-left: 250px;
-    margin-top: 26px;
-    width: 200px;
-    height: 28px;
-    font-family: Arial;
-    font-weight: bold;
-    color: #383E45;
-    font-size: 21.6px;
-    text-align: left;
-  }
+/* 詳細ページメイン画像 */
+.mainDetailVisualImg img {
+  width: 840px;
+  height: 480px;
+  object-fit: cover;
+}
+/* 詳細ページメイン画像 位置調整*/
+.mainDetailVisualImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+/* 詳細タイトル */
+.detailTitle {
+  margin-left: 250px;
+  margin-top: 26px;
+  width: 200px;
+  height: 28px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #383E45;
+  font-size: 21.6px;
+  text-align: left;
+}
+/* 詳細文　位置 */
+.textDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+}
+/* 詳細文　中身 */
+.textDetail p {
+  margin-left: 250px;
+  width: 775px;
+  font-size: 14.4px;
+  font-family: Arial;
+  color: #383E45;
+}
+/* トップに戻るボタン位置 */
+.detailButtonArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+}
+/* トップに戻るボタン位置 位置*/
+.detailTopReturn {
+  width: 100px;
+  height: 20px;
+  font-size: 14.4px;
+  font-family: Arial;
+  text-align: left;
+  color: #383E45;
+  text-align: center;
+  border: none;
+  background: none;
+}
 
-  .textDetail{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 25px;
-  }
-
-  .textDetail p{
-    margin-left: 250px;
-    width: 775px;
-    font-size: 14.4px;
-    font-family: Arial;
-    color: #383E45;
-  }
-  .detailButtonArea{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 55px;
-  }
-  .detailTopReturn{
-    width: 100px;
-    height: 20px;
-    font-size: 14.4px;
-    font-family: Arial;
-    text-align: left;
-    color: #383E45;
-    text-align: center;
-    border: none;
-    background: none;
-  }
-/* 
-img {
-  width: 100vw !important;
-  height: 480px !important;
-  object-fit: cover !important;
-} */
 /* メディアクエリ699.98px以下の変動 */
 @media screen and (max-width:699.98px) {
 
@@ -235,7 +247,8 @@ img {
     align-items: center;
     justify-content: center;
   }
-  .mainDetailVisualImg img{
+
+  .mainDetailVisualImg img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -283,19 +296,20 @@ img {
     margin-top: 138px;
   }
 
-  .bottomDetailPage .detailTitle{
+  .bottomDetailPage .detailTitle {
     margin-left: 0px;
     margin: 10px;
+    margin-top: 30px;
   }
 
-  .textDetail p{
+  .textDetail p {
     margin-left: 0px;
     width: 100%;
     height: auto;
     margin: 10px;
   }
 
-  .textDetail{
+  .textDetail {
     margin-right: 100px;
   }
 }
